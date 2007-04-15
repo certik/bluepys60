@@ -40,3 +40,29 @@ Ping: 00:19:79:86:EB:BC from 00:16:41:7A:33:A4 (data size 44) ...
 0 bytes from 00:19:79:86:EB:BC id 4 time 11.15ms
 Send failed: Connection reset by peer
 }}}
+
+Now try to get a directory listing using an OBEX protocol:
+{{{
+obexftp -b 00:19:79:86:EB:BC -l
+}}}
+If it prints:
+{{{
+Browsing 00:19:79:86:EB:BC ...
+Channel: 10
+Connecting...done
+Receiving "(null)"... <?xml version="1.0"?>    <!DOCTYPE folder-listing SYSTEM "obex-folder-listing.dtd">    <folder-listing version="1.0"></folder-listing>doneDisconnecting...done
+}}}
+Then you are done.If it prints
+{{{
+Browsing 00:19:79:86:EB:BC ...
+Channel: 10
+Connecting...failed: connect
+Still trying to connect
+Connecting...failed: connect
+Still trying to connect
+Connecting...failed: connect
+Still trying to connect
+}}}
+then continue reading.
+
+You need to pair your phone.
