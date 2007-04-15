@@ -25,3 +25,18 @@ should print:
 Scanning ...
         00:19:79:86:EB:BC       Nokia N70
 }}}
+
+You can try to ping your phone
+{{{
+sudo l2ping 00:19:79:86:EB:BC
+}}}
+Prints on my computer:
+{{{
+Ping: 00:19:79:86:EB:BC from 00:16:41:7A:33:A4 (data size 44) ...
+0 bytes from 00:19:79:86:EB:BC id 0 time 228.50ms
+0 bytes from 00:19:79:86:EB:BC id 1 time 11.50ms
+0 bytes from 00:19:79:86:EB:BC id 2 time 11.35ms
+0 bytes from 00:19:79:86:EB:BC id 3 time 11.28ms
+0 bytes from 00:19:79:86:EB:BC id 4 time 11.15ms
+Send failed: Connection reset by peer
+}}}
