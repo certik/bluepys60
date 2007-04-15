@@ -94,3 +94,6 @@ Go to http://sourceforge.net/project/showfiles.php?group_id=154155 and install !
 PythonForS60_1_3_20_2ndEdFP3.SIS 
 PythonScriptShell_1_3_20_2ndEdFP3.SIS
 }}}
+
+If you are new to Python on S60, start here:
+http://wiki.forum.nokia.com/index.php/Category:Python
