@@ -89,8 +89,8 @@ Another option is to mount the memory card as a USB mass storage device, unfortu
 
 = Install Python =
 
-Go to http://sourceforge.net/project/showfiles.php?group_id=154155 and install PythonForS60 package and then the PythonScriptShell. Depending on your version of Symbian, if for example you have 2nd Edition, FP3, you need to install these two files:
+Go to http://sourceforge.net/project/showfiles.php?group_id=154155 and install !PythonForS60 package and then the !PythonScriptShell. Depending on your version of Symbian, if for example you have the 2nd Edition, FP3, you need to install these two files:
 {{{
-PythonForS60_1_3_15_2ndEdFP3.SIS 
-PythonScriptShell_1_3_15_2ndEdFP3.SIS
+PythonForS60_1_3_20_2ndEdFP3.SIS 
+PythonScriptShell_1_3_20_2ndEdFP3.SIS
 }}}
