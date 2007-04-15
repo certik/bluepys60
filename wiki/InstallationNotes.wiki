@@ -1,6 +1,6 @@
 #summary How to get it all running.
 
-== Bluetooth ==
+== Bluetooth installation ==
 
 {{{
 wajig install bluetooth
@@ -76,3 +76,13 @@ it is in the `/usr/share/doc/bluez-utils/examples/`. Now run:
 obexftp -b 00:19:79:86:EB:BC -l
 }}}
 on the phone a dialog will popup asking you to enter a pin, enter the 1234, as you gave to the passkey-agent. That should be it, it should print the listing and you are done.
+
+== Sending a file to the phone ==
+
+To send a file `/tmp/something` to the phone, use:
+{{{
+obexftp -b 00:19:79:86:EB:BC -p /tmp/something
+}}}
+The phone will ask you if you want to open it or save it somewhere.
+
+Another option is to mount the memory card as a USB mass storage device, unfortunately, this only works on some phones.
