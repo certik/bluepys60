@@ -71,11 +71,11 @@ compile and run the:
 {{{
 ./passkey-agent --default 1234
 }}}
-it is in the `/usr/share/doc/bluez-utils/examples/`. Now run:
+it is in the `/usr/share/doc/bluez-utils/examples/`. Leave it running, start another terminal and:
 {{{
 obexftp -b 00:19:79:86:EB:BC -l
 }}}
-on the phone a dialog will popup asking you to enter a pin, enter the 1234, as you gave to the passkey-agent. That should be it, it should print the listing and you are done.
+on the phone a dialog will popup asking you to enter a pin, enter the 1234, as you gave to the passkey-agent. Enter it and that should be it, the `obexftp` should print the listing and you are done. You can now kill the `passkey-agent` using CTRL-C.
 
 == Sending a file to the phone ==
 
