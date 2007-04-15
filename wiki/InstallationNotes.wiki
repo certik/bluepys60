@@ -85,4 +85,4 @@ obexftp -b 00:19:79:86:EB:BC -p /tmp/something
 }}}
 The phone will ask you if you want to open it or save it somewhere.
 
-Another option is to mount the memory card as a USB mass storage device, unfortunately, this only works on some phones.
+Another option is to mount the memory card as a USB mass storage device, unfortunately this only works on some phones.
