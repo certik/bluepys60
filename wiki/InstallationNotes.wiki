@@ -1,0 +1,27 @@
+#summary How to get it all running.
+
+== Bluetooth ==
+
+{{{
+wajig install bluetooth
+hciconfig
+}}}
+
+Should print:
+{{{
+hci0:   Type: USB
+        BD Address: 00:16:41:7A:33:A4 ACL MTU: 1017:8 SCO MTU: 64:0
+        UP RUNNING PSCAN ISCAN
+        RX bytes:391 acl:0 sco:0 events:17 errors:0
+        TX bytes:317 acl:0 sco:0 commands:17 errors:0
+}}}
+
+Turn on the bluetooth on the mobile and
+{{{
+hcitool scan
+}}}
+should print:
+{{{
+Scanning ...
+        00:19:79:86:EB:BC       Nokia N70
+}}}
