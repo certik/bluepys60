@@ -3,7 +3,7 @@
 = Install Bluetooth =
 
 {{{
-wajig install bluetooth
+wajig install bluetooth obexftp
 sudo hciconfig
 }}}
 
