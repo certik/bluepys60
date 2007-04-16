@@ -78,4 +78,4 @@ python version:
 [GCC 2.9-psion-98r2 (Symbian build 546)]
 }}}
 
-Run `python-s60 -h` for all options.
+Run `./python-s60 -h` for all options.
