@@ -64,3 +64,18 @@ python version:
 2.2.2 (#0, Mar 23 2007, 12:02:04)
 [GCC 2.9-psion-98r2 (Symbian build 546)]
 }}}
+
+The device address can be changed with the "-b" switch.
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v -b 00:19:79:86:EB:BC test.py
+# reading a file 'test.py'
+# connecting to 00:19:79:86:EB:BC...
+# sending the file...
+# receiving results...
+current dir: Z:\SYSTEM\PROGRAMS\
+python version:
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
+}}}
+
+Run `python-s60 -h` for all options.
