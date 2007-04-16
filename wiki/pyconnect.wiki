@@ -6,7 +6,13 @@
 cd pyconnect
 obexftp -b 00:19:79:86:EB:BC -p mobile.py
 }}}
-Install the script in the phone and run it. It will start listening. On the computer, run:
+Install the script in the phone and run it. It will start listening. 
+
+= Usage =
+
+== Basic example ==
+
+On the computer, run:
 
 {{{
 ondra@pc232:~/extprograms/bluepys60/pyconnect$ python pc.py 
@@ -26,4 +32,35 @@ stop
 Edit the address of your phone in the pc.py:
 {{{
 b.connect("00:19:79:86:EB:BC",5)
+}}}
+
+== python-s60 ==
+
+There is a nice program `python-s60` that should act just like the `python` command, but the code is going to be executed on the phone over the bluetooth.
+
+Example:
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ python test.py
+current dir: /home/ondra/bluepys60/pyconnect
+python version:
+2.4.4 (#2, Apr  5 2007, 20:11:18)
+[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)]
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 test.py
+current dir: Z:\SYSTEM\PROGRAMS\
+python version:
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
+}}}
+
+You can also be more verbose:
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v test.py
+# reading a file 'test.py'
+# connecting to 00:19:79:86:EB:BC...
+# sending the file...
+# receiving results...
+current dir: Z:\SYSTEM\PROGRAMS\
+python version:
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
 }}}
