@@ -1,0 +1,9 @@
+#summary Some ideas for future improvements
+
+== python-s60 ==
+
+Make the "exec" store it's values in some dictionary (locals), copy it from:
+
+http://codespeak.net/svn/pypy/dist/pypy/translator/js/examples/pythonconsole.py
+
+And create a console mode in this way. Make the locals unique for each connection.
