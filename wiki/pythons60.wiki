@@ -1,4 +1,4 @@
-#summary Documentation to python-s60 command
+#summary Documentation for python-s60 command
 
 = Introduction =
 
