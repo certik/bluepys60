@@ -2,7 +2,7 @@
 
 == Installation ==
 
-You need to install `python-s60` and check that it works. Nothing else is needed.
+You need to install [http://code.google.com/p/bluepys60/wiki/pythons60 python-s60] and check that it works. Nothing else is needed.
 
 == File manager ==
 
