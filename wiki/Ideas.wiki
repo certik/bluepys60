@@ -5,5 +5,28 @@
 Make the "exec" store it's values in some dictionary (locals), copy it from:
 
 http://codespeak.net/svn/pypy/dist/pypy/translator/js/examples/pythonconsole.py
+{{{
+    def run_some_callback(self, cmd=[""]):
+        cmd = cmd[0]
+        self.server.last_activity = time.time()
+        if cmd:
+            buf = cStringIO.StringIO()
+            out1 = sys.stdout
+            err1 = sys.stderr
+            try:
+                sys.stdout = sys.stderr = buf
+                try:
+                    exec compile(cmd, '?', 'single') in self.server.locals
+                except Exception:
+                    import traceback
+                    traceback.print_exc()
+            finally:
+                sys.stdout = out1
+                sys.stderr = err1
+            answer = buf.getvalue()
+        else:
+            answer = ""
+        self.serve_data("text/json", repr({'answer': answer}))
+}}}
 
 And create a console mode in this way. Make the locals unique for each connection.
