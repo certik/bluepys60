@@ -79,3 +79,26 @@ python version:
 }}}
 
 Run `./python-s60 -h` for all options.
+
+== File manager ==
+
+Run
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ python manager.py
+starting
+}}}
+leave it running and in another terminal, run:
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 manager.py
+starting
+done.
+}}}
+This will do the commands specified in `commands.py` and the first terminal will look like this:
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ python manager.py
+starting
+sending: test.py -> E:\ondra\test.py
+sending: test.py -> E:\ondra\test2.py
+receiving: E:\ondra\test2.py -> /tmp/x
+done.
+}}}
