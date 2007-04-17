@@ -14,7 +14,7 @@ Install the script in the phone and run it. It will start listening.
 
 = Usage =
 
-== Basic example ==
+== Interactive console ==
 
 On the computer, run:
 
@@ -29,47 +29,66 @@ Type "help", "copyright", "credits" or "license" for more information.
 [GCC 2.9-psion-98r2 (Symbian build 546)]
 }}}
 
-Example:
+You can also be more verbose with the "-v" switch:
 {{{
-ondra@syslik:~/bluepys60/pyconnect$ python test.py
-current dir: /home/ondra/bluepys60/pyconnect
-python version:
-2.4.4 (#2, Apr  5 2007, 20:11:18)
-[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)]
-ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 test.py
-current dir: Z:\SYSTEM\PROGRAMS\
-python version:
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v
+# connecting to 00:19:79:86:EB:BC...
+# sending the command...
+# receiving results...
 2.2.2 (#0, Mar 23 2007, 12:02:04)
 [GCC 2.9-psion-98r2 (Symbian build 546)]
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+# sending the command...
+# receiving results...
+>>> print sys.version
+# sending the command...
+# receiving results...
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
+>>>
 }}}
 
-You can also be more verbose:
+The device address can be changed with the "-b" switch:
 {{{
-ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v test.py
-# reading a file 'test.py'
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v -b 00:19:79:86:EB:BC
 # connecting to 00:19:79:86:EB:BC...
-# sending the file...
+# sending the command...
 # receiving results...
-current dir: Z:\SYSTEM\PROGRAMS\
-python version:
 2.2.2 (#0, Mar 23 2007, 12:02:04)
 [GCC 2.9-psion-98r2 (Symbian build 546)]
-}}}
-
-The device address can be changed with the "-b" switch.
-{{{
-ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 -v -b 00:19:79:86:EB:BC test.py
-# reading a file 'test.py'
-# connecting to 00:19:79:86:EB:BC...
-# sending the file...
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+# sending the command...
 # receiving results...
-current dir: Z:\SYSTEM\PROGRAMS\
-python version:
+>>> print sys.version
+# sending the command...
+# receiving results...
 2.2.2 (#0, Mar 23 2007, 12:02:04)
 [GCC 2.9-psion-98r2 (Symbian build 546)]
+>>>
 }}}
 
 Run `./python-s60 -h` for all options.
+
+== Run a script ==
+
+{{{
+ondra@syslik:~/bluepys60/pyconnect$ cat test.py
+import os, sys
+print "python version:"
+print sys.version
+#print os.listdir(r"E:\system\Apps\Python\my")
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 test.py
+python version:
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
+ondra@syslik:~/bluepys60/pyconnect$ python test.py
+python version:
+2.4.4 (#2, Apr  5 2007, 20:11:18)
+[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)]
+}}}
+
 
 == File manager ==
 
