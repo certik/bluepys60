@@ -2,7 +2,7 @@
 
 = Introduction =
 
-`python-s60` is a python console behaving just like a `python` command, but executing all commands remotely on the cell phone over the bluetooth.
+`python-s60` is a python interpreter behaving just like a `python` command, but executing all commands remotely on the cell phone over the bluetooth.
 
 = Installation =
 
