@@ -6,6 +6,9 @@
 
 = Installation =
 
+Install bluetooth and python on s60, see InstallationNotes.
+
+Then
 {{{
 cd pyconnect
 obexftp -b 00:19:79:86:EB:BC -p mobile.py
