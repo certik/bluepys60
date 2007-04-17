@@ -93,7 +93,7 @@ ondra@syslik:~/bluepys60/pyconnect$ ./python-s60 manager.py
 starting
 done.
 }}}
-This will execute the `commands()` function in `commands.py`:
+This will execute the `commands()` function in `commands.py` (on the computer):
 {{{
 def commands(send, recv):
     send("test.py",r"E:\ondra\test.py")
