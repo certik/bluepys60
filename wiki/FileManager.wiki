@@ -1,5 +1,9 @@
 #summary Simple file manager
 
+== Installation ==
+
+You need to install `python-s60` and check that it works. Nothing else is needed.
+
 == File manager ==
 
 Run
