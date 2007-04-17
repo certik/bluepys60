@@ -1,4 +1,8 @@
-#summary A simple console
+#summary Documentation to python-s60
+
+= Introduction =
+
+`python-s60` is a python console behaving just like a `python` command, but executing all commands remotely on the cell phone over the bluetooth.
 
 = Installation =
 
@@ -15,28 +19,15 @@ Install the script in the phone and run it. It will start listening.
 On the computer, run:
 
 {{{
-ondra@pc232:~/extprograms/bluepys60/pyconnect$ python pc.py 
-connecting
-connected:
-sending str
-receiving
-This code runs on the phone
-current dir: Z:\SYSTEM\PROGRAMS\
-python version:
+ondra@syslik:~/bluepys60/pyconnect$ ./python-s60
 2.2.2 (#0, Mar 23 2007, 12:02:04)
 [GCC 2.9-psion-98r2 (Symbian build 546)]
-
-stop
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> print sys.version
+2.2.2 (#0, Mar 23 2007, 12:02:04)
+[GCC 2.9-psion-98r2 (Symbian build 546)]
 }}}
-
-Edit the address of your phone in the pc.py:
-{{{
-b.connect("00:19:79:86:EB:BC",5)
-}}}
-
-== python-s60 ==
-
-There is a nice program `python-s60` that should act just like the `python` command, but the code is going to be executed on the phone over the bluetooth.
 
 Example:
 {{{
